@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXContextMenuItem?>
+<?import io.github.palexdev.materialfx.controls.MFXNotificationCenter?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1200.0"
+            styleClass="vbox_background_center" stylesheets="@../css/ManageUserProfile.css"
+            xmlns="http://javafx.com/javafx/21">
+    <left>
+        <VBox prefHeight="680.0" prefWidth="311.0" styleClass="left-vbox" stylesheets="@../css/ManageUserProfile.css"
+              BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="376.0" styleClass="hbox_leftTop"
+                      stylesheets="@../css/ManageUserProfile.css">
+                    <children>
+                        <MFXContextMenuItem prefHeight="73.0" prefWidth="289.0" styleClass="hbox_leftTop"
+                                            stylesheets="@../css/ManageUserProfile.css" text="Dashboard">
+                            <font>
+                                <Font name="ArtifaktElement-Book" size="30.0"/>
+                            </font>
+                        </MFXContextMenuItem>
+                    </children>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </HBox>
+                <Accordion prefHeight="462.0" prefWidth="216.0" stylesheets="@../css/ManageUserProfile.css">
+                    <panes>
+                        <TitledPane prefHeight="228.0" prefWidth="283.0" stylesheets="@../css/ManageUserProfile.css"
+                                    text="User Management" wrapText="true">
+                            <content>
+                                <VBox prefHeight="145.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton cancelButton="true" prefHeight="30.0" prefWidth="248.0"
+                                                   stylesheets="@../css/ManageUserProfile.css"
+                                                   text="View User Profiles">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="115.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/usericon.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="357.0" text="Manage User Accounts">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="115.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/add%20user%20icon.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                        <TitledPane text="Course Management">
+                            <content>
+                                <VBox prefHeight="181.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Add New Course">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Edit Course Details">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Remove Course">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="View Course Enrollment">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                        <TitledPane text="Financial Management">
+                            <content>
+                                <VBox prefHeight="181.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0"
+                                                   text="View Tuition and Fee Statistics">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Manage Billing">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Manage Financial Aid">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Manage Scholarships">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                        <TitledPane text="Analytics and Reporting:">
+                            <content>
+                                <VBox prefHeight="181.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton prefHeight="25.0" prefWidth="262.0"
+                                                   text="View User Engagement Insights">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="25.0" prefWidth="262.0" text="View Grade Distributions">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="25.0" prefWidth="262.0" text="View Performance Metrics">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                        <TitledPane prefWidth="386.0" text="Alumni Network">
+                            <content>
+                                <VBox prefHeight="181.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="View Alumni Statistics">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Manage Alumni Profiles">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Manage Alumni Events">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0"
+                                                   text="Mentorship Program Management">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                        <TitledPane text="Event Management">
+                            <content>
+                                <VBox prefHeight="181.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Add New Event">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Edit Event Details">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Remove Event">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="View Event Statistics">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                        <TitledPane text="Resource Management">
+                            <content>
+                                <VBox prefHeight="181.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="View Available Resources">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Add New Resource">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Edit Resource Details">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Remove Resource">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                        <TitledPane text="Administrative Tools">
+                            <content>
+                                <VBox prefHeight="181.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Manage Waitlists">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Submit Final Grades">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0"
+                                                   text="Access Reports and Data Export">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                        <TitledPane prefHeight="187.0" prefWidth="381.0" text="Announcements and Notifications">
+                            <content>
+                                <VBox prefHeight="181.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton maxHeight="55.0" prefHeight="55.0" prefWidth="268.0"
+                                                   text="Create System-Wide Announcements">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Manage Announcements">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Send Notifications">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                        <TitledPane text="Feedback and Support">
+                            <content>
+                                <VBox prefHeight="181.0" prefWidth="272.0" spacing="10.0">
+                                    <children>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="View User Feedback">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="View Support Tickets">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="View Reported Issues">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                        <MFXButton prefHeight="30.0" prefWidth="262.0" text="Respond to User Inquiries">
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                            </graphic>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </content>
+                        </TitledPane>
+                    </panes>
+                </Accordion>
+            </children>
+            <effect>
+                <DropShadow height="19.54" offsetX="-10.0" radius="8.17" spread="0.5" width="15.14"/>
+            </effect>
+        </VBox>
+    </left>
+    <center>
+        <VBox prefHeight="680.0" prefWidth="873.0" styleClass="vbox_background_center"
+              stylesheets="@../css/ManageUserProfile.css" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="52.0" prefWidth="750.0">
+                    <children>
+                        <Label prefHeight="49.0" prefWidth="651.0" text="Welcome To Admin Dashboard!">
+                            <HBox.margin>
+                                <Insets left="11.0" top="14.0"/>
+                            </HBox.margin>
+                            <font>
+                                <Font name="Segoe UI Light" size="24.0"/>
+                            </font>
+                        </Label>
+                        <MFXNotificationCenter counterStyle="DOT" doNotDisturb="true" markAsReadOnDismiss="true"
+                                               markAsReadOnShow="true" opacity="0.71" popupHeight="400.0"
+                                               prefHeight="29.0" prefWidth="10.0" selectionMode="true">
+                            <HBox.margin>
+                                <Insets top="7.0"/>
+                            </HBox.margin>
+                        </MFXNotificationCenter>
+                        <MenuButton mnemonicParsing="false" opacity="0.78" prefHeight="29.0" prefWidth="118.0"
+                                    text="User">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Logout">
+                                    <graphic>
+                                        <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icon/logout.png"/>
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </MenuItem>
+                            </items>
+                            <graphic>
+                                <ImageView fitHeight="36.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icon/useravatar.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="15.0" top="13.0"/>
+                            </HBox.margin>
+                        </MenuButton>
+                    </children>
+                </HBox>
+                <MFXContextMenuItem/>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

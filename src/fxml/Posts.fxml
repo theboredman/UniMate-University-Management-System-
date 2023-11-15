@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="222.0" prefWidth="753.0"
+            styleClass="vbox_background_center" stylesheets="@../css/ManageUserProfile.css"
+            xmlns="http://javafx.com/javafx/21" fx:controller="controllers.PostsController">
+    <children>
+        <VBox prefHeight="222.0" prefWidth="753.0" styleClass="border-box" stylesheets="@../css/ManageUserProfile.css">
+            <children>
+                <HBox prefHeight="70.0" prefWidth="751.0">
+                    <children>
+                        <Circle fx:id="profilePicture" fill="DODGERBLUE" radius="25.0" stroke="BLACK"
+                                strokeType="INSIDE">
+                            <HBox.margin>
+                                <Insets left="10.0" top="10.0"/>
+                            </HBox.margin>
+                        </Circle>
+                        <VBox prefHeight="70.0" prefWidth="312.0">
+                            <children>
+                                <Label fx:id="nameLabel" prefHeight="14.0" prefWidth="166.0" text="Name"
+                                       textFill="WHITE">
+                                    <VBox.margin>
+                                        <Insets left="10.0" top="15.0"/>
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Nunito Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                                <Label fx:id="idLabel" prefHeight="14.0" prefWidth="155.0" text="ID" textFill="WHITE">
+                                    <VBox.margin>
+                                        <Insets left="10.0" top="5.0"/>
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Nunito Bold" size="12.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <Label fx:id="postDataLabel" alignment="TOP_LEFT" prefHeight="300.0" prefWidth="736.0"
+                       text="Your Post Here........................" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="Nunito Regular" size="24.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0"/>
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

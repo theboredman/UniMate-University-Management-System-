@@ -1,0 +1,189 @@
+
+.mfx-button {
+    -fx-text-fill: #fff;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-color: transparent;
+
+}
+
+.mfx-button-logo {
+    -fx-alignment: CENTER;
+    -fx-background-color: transparent;
+}
+
+
+.mfx-button:hover {
+    -fx-background-color: #1976D2;
+}
+
+
+.mfx-notification-center {
+    -fx-fill: #2196F3;
+    -fx-hover-fill: #1976D2;
+    -fx-pref-width: 30;
+    -fx-pref-height: 30;
+}
+
+
+.menu-button .label {
+    -fx-text-fill: #333;
+}
+
+.mfx-button .image-view {
+    -fx-fit-width: 115;
+    -fx-fit-height: 30;
+}
+
+.left-vbox {
+    -fx-background-insets: 0 20 0 0, 0 20 0 0;
+
+    -fx-background-color: #355062;
+    -fx-background-radius: 0 30 30 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, 0);
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-min-width: 268;
+}
+
+.center-top-hbox {
+    -fx-background-insets: 20 0 0 0, 20 0 0 0;
+    -fx-background-color: #355062;
+    -fx-background-radius: 30 30 30 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, 0);
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-min-width: 268;
+}
+
+
+.hbox_leftTop {
+
+    -fx-background-radius: 0 30 0 0;
+    -fx-background-insets: 0 0 0 0;
+}
+
+
+.accordion {
+    -fx-padding: 20;
+}
+
+.titled-pane {
+    -fx-text-fill: #ffff;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.titled-pane > .title {
+    -fx-text-fill: #ffff;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+
+    -fx-font-size: 15;
+}
+
+.titled-pane > .content {
+    -fx-padding: 15;
+    -fx-border-color: transparent;
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-text-fill: #fff;
+    -fx-font-size: 12;
+}
+
+
+.vbox_background_center {
+    -fx-background-color: #637484;
+
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+
+.mfx-text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent white transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: white;
+}
+
+.mfx-text-field > .mfx-floating-label {
+    -fx-text-fill: white;
+}
+
+.mfx-text-field > .text-field {
+    -fx-text-fill: white;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+
+}
+
+.menu-button:hover {
+    -fx-background-color: #1976D2;
+}
+
+.menu-button .label {
+    -fx-text-fill: white;
+}
+
+.menu-button .menu-item {
+    -fx-text-fill: white;
+    -fx-background-color: #333333;
+}
+
+.menu-button .menu-item:selected {
+    -fx-background-color: #555555;
+}
+
+.menu-button .menu-item:hover {
+    -fx-background-color: #444444;
+}
+
+.center-buttons {
+    -fx-background-radius: 20;
+}
+
+.mfx-notification-center {
+    -fx-background-color: transparent;
+}
+
+.rounded-box {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+}
+
+.border-box {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+    -fx-border-color: #fff;
+    -fx-background-color: #355062;
+}
+
+.mfx-context-menu-button:hover {
+    -fx-background-color: #757575;
+}
+

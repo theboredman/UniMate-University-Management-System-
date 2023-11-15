@@ -1,0 +1,112 @@
+.vbox_background_center {
+    -fx-background-color: #355062;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.5), 20.0, 0.0, 1.0, 3.0);
+
+}
+
+.vbox_background_right {
+    -fx-background-color: #637484;
+
+}
+
+.button {
+    -fx-background-color: #637484;
+    -fx-text-fill: white;
+    -fx-background-radius: 30.0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.3), 5.0, 0.0, 0.0, 1.0);
+    -fx-padding: 10.0 20.0 10.0 20.0;
+    -fx-font-weight: bold;
+}
+
+.icon {
+    -fx-text-fill: #355062;
+    -fx-fill: white;
+}
+
+.hyperlink {
+    -fx-text-fill: #FF5733;
+}
+
+.logo-glowing {
+    -fx-effect: dropshadow(gaussian, rgba(99.0, 116.0, 132.0, 0.7), 30.0, 0.0, 0.0, 0.0);
+}
+
+.anchor-pane {
+    -fx-background-color: linear-gradient(from 100.0% 0.0% to 0.0% 0.0%, #637484, #355062);
+}
+
+.pane {
+    -fx-background-color: rgba(255.0, 255.0, 255.0, 0.5);
+    -fx-background-radius: 50.0;
+    -fx-border-color: rgba(255.0, 255.0, 255.0, 0.5);
+    -fx-border-radius: 50.0;
+    -fx-border-width: 2.0;
+    -fx-border-style: solid;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #637484, #355062);
+
+}
+
+.outlined-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2.0px;
+    -fx-text-fill: #2196F3;
+    -fx-pref-width: 150.0px;
+    -fx-pref-height: 40.0px;
+    -fx-font-size: 16.0px;
+    -fx-cursor: hand;
+}
+
+.hyperlink {
+    -fx-font-size: 12.0px;
+    -fx-text-fill: #2196F3;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #FF5722;
+}
+
+
+.mfx-text-field {
+    -mfx-prompt-text-fill: #B0BEC5;
+    -mfx-highlight-fill: transparent;
+    -mfx-highlight-text-fill: #2196F3;
+    -mfx-faint-focus-color: transparent;
+    -fx-background-color: #FAFAFA;
+    -fx-border-color: #B0BEC5;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+}
+
+.mfx-text-field:focused {
+    -fx-border-color: #2196F3;
+}
+
+.mfx-text-field > .mfx-label-float {
+    -mfx-float-text-fill: #2196F3;
+}
+
+.mfx-text-field > .mfx-float-container {
+    -mfx-float-cornerRadius: 4;
+}
+
+.mfx-text-field > .mfx-text-field-icon > .mfx-icon {
+    -fx-fill: #2196F3;
+}
+
+.mfx-text-field {
+
+    -mfx-prompt-text-fill: white;
+    -fx-text-fill: white;
+    -fx-background-color: rgba(211, 211, 211, 0.5);
+
+}

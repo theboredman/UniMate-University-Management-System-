@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXNotificationCenter?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1200.0"
+            styleClass="vbox_background_center" stylesheets="@../css/DashBoard.css" xmlns="http://javafx.com/javafx/21"
+            fx:controller="controllers.DashBoard">
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="98.0" prefWidth="802.0" style="-fx-background-color: #355062;"
+                      styleClass="center-top-hbox">
+                    <children>
+                        <Label prefHeight="84.0" prefWidth="518.0" text="Welcome to Admin Dashboard!" textFill="WHITE"
+                               wrapText="true">
+                            <font>
+                                <Font name="Nunito SemiBold Italic" size="26.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets left="22.0" top="12.0"/>
+                            </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="63.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../logo/Logo.png"/>
+                            </image>
+                            <HBox.margin>
+                                <Insets top="26.0"/>
+                            </HBox.margin>
+                        </ImageView>
+                        <MFXNotificationCenter fx:id="notificationCenter" counterStyle="DOT" doNotDisturb="true"
+                                               markAsReadOnDismiss="true" markAsReadOnShow="true"
+                                               onIconClicked="#handleNotificationCenterAction" opacity="0.71"
+                                               popupHeight="400.0" prefHeight="37.0" prefWidth="37.0"
+                                               selectionMode="true" styleClass="mfx-notification-center">
+                            <HBox.margin>
+                                <Insets left="350.0" top="27.0"/>
+                            </HBox.margin>
+                        </MFXNotificationCenter>
+                        <MenuButton fx:id="" mnemonicParsing="false" opacity="0.78" prefHeight="47.0" prefWidth="145.0"
+                                    text="Admin" textFill="WHITE" wrapText="true">
+                            <items>
+                                <MenuItem fx:id="logoutMenuItem" mnemonicParsing="false"
+                                          onAction="#handleLogoutMenuItemAction" text="Logout">
+                                    <graphic>
+                                        <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icon/logout.png"/>
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </MenuItem>
+                            </items>
+                            <graphic>
+                                <ImageView fitHeight="36.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icon/useravatar.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="7.0" top="31.0"/>
+                            </HBox.margin>
+                            <font>
+                                <Font name="Nunito Black" size="13.0"/>
+                            </font>
+                        </MenuButton>
+                    </children>
+                </HBox>
+                <MFXScrollPane fx:id="scrollPane" prefHeight="581.0" prefWidth="1200.0">
+                    <content>
+                        <HBox prefHeight="1117.0" prefWidth="1175.0">
+                            <children>
+                                <VBox prefHeight="756.0" prefWidth="599.0">
+                                    <children>
+                                        <MFXButton fx:id="manageUserProfilesButton" cancelButton="true"
+                                                   prefHeight="30.0" prefWidth="310.0"
+                                                   stylesheets="@../css/ManageUserProfile.css"
+                                                   text="Manage User Profiles">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/newsid.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="manageFacultyProfilesButton" cancelButton="true"
+                                                   prefHeight="30.0" prefWidth="310.0"
+                                                   stylesheets="@../css/ManageUserProfile.css"
+                                                   text="Manage Faculty Profiles">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/teacherlanguage.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="registrationRequestsButton" prefHeight="44.0"
+                                                   prefWidth="310.0" text="Registration Requests">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/approval.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="courseManagementButton" prefHeight="30.0" prefWidth="310.0"
+                                                   text="Course Management">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/bookvertical.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="viewCourseEnrollmentButton" prefHeight="30.0"
+                                                   prefWidth="310.0" text="View Course Enrollment">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/book.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="viewTuitionAndFeeStatisticsButton" prefHeight="30.0"
+                                                   prefWidth="310.0" text="View Tuition and Fee Statistics">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/coinseuros.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="manageScholarshipsButton" prefHeight="30.0" prefWidth="310.0"
+                                                   text="Manage Scholarships">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/studency.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="newsFeedButton" maxHeight="55.0" prefHeight="46.0"
+                                                   prefWidth="310.0" text="News Feed">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/newspaper2.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="postManagementButton" prefHeight="30.0" prefWidth="310.0"
+                                                   text="Post Management">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/browsernews.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="viewUserEngagementInsightsButton" prefHeight="25.0"
+                                                   prefWidth="310.0" text="View User Engagement Insights">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/thickbook.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="100.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                                <VBox prefHeight="756.0" prefWidth="572.0">
+                                    <children>
+                                        <MFXButton fx:id="viewGradeDistributionsButton" prefHeight="25.0"
+                                                   prefWidth="310.0" text="View Grade Distributions">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/grade.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="70.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="viewPerformanceMetricsButton" prefHeight="25.0"
+                                                   prefWidth="310.0" text="View Performance Metrics">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/economydiary.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="70.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="eventManagementButton" prefHeight="30.0" prefWidth="310.0"
+                                                   text="Event Management">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/addevent.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="70.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="resourceManagementButton" prefHeight="30.0" prefWidth="310.0"
+                                                   text="Resource Management">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/resources.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="70.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="manageWaitlistsButton" prefHeight="30.0" prefWidth="310.0"
+                                                   text="Manage Waitlists">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/waitlist.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="70.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="accessReportsAndDataExportButton" prefHeight="30.0"
+                                                   prefWidth="310.0" text="Access Reports and Data Export">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/export.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="70.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="createSystemWideAnnouncementsButton" maxHeight="55.0"
+                                                   prefHeight="46.0" prefWidth="310.0"
+                                                   text="Create System-Wide Announcements">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/news.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="70.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="manageAnnouncementsButton" prefHeight="30.0" prefWidth="310.0"
+                                                   text="Manage Announcements">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/newsfile2.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="70.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                        <MFXButton fx:id="sendNotificationsButton" prefHeight="30.0" prefWidth="310.0"
+                                                   text="Send Notifications">
+                                            <graphic>
+                                                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../icon/envelopewarn.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets left="70.0" top="30.0"/>
+                                            </VBox.margin>
+                                        </MFXButton>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </content>
+                </MFXScrollPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

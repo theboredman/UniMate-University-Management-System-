@@ -1,0 +1,88 @@
+.mfx-button {
+    -mfx-background-color: #355062;
+    -mfx-text-fill: white;
+    -mfx-ripple-color: #ffffff;
+    -fx-background-radius: 20;
+}
+
+.center-top-hbox {
+    -fx-background-insets: 20 0 0 0, 20 0 0 0;
+    -fx-background-color: #355062;
+    -fx-background-radius: 30 30 30 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, 0);
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-min-width: 268;
+}
+
+.vbox_background_center {
+    -fx-background-color: #637484;
+
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+
+}
+
+.menu-button:hover {
+    -fx-background-color: #1976D2;
+}
+
+.menu-button .label {
+    -fx-text-fill: white;
+}
+
+.menu-button .menu-item {
+    -fx-text-fill: white;
+    -fx-background-color: #333333;
+}
+
+.menu-button .menu-item:selected {
+    -fx-background-color: #555555;
+}
+
+.menu-button .menu-item:hover {
+    -fx-background-color: #444444;
+}
+
+.mfx-button {
+    -fx-text-fill: #fff;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-color: transparent;
+}
+
+.mfx-button:hover {
+    -fx-background-color: #1976D2;
+}
+
+
+.mfx-notification-center {
+    -fx-fill: #2196F3;
+    -fx-hover-fill: #1976D2;
+    -fx-pref-width: 30;
+    -fx-pref-height: 30;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="47.0" prefWidth="780.0" style="-fx-background-color: #637484;"
+      xmlns="http://javafx.com/javafx/21" fx:controller="controllers.PaneFacultyController">
+    <children>
+        <Label fx:id="showCourseInitialLabel" prefHeight="20.0" prefWidth="97.0" text="Course Initial" textFill="WHITE">
+            <font>
+                <Font name="Nunito Bold" size="14.0"/>
+            </font>
+            <HBox.margin>
+                <Insets left="30.0" right="90.0"/>
+            </HBox.margin>
+        </Label>
+        <MFXButton fx:id="submitGradesButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER"
+                   depthLevel="LEVEL5" layoutX="387.0" layoutY="20.0" prefHeight="28.0" prefWidth="120.0"
+                   style="-fx-background-color: #355E3B;" text="Submit Grades" textFill="WHITE">
+            <font>
+                <Font name="Nunito Bold" size="14.0"/>
+            </font>
+            <HBox.margin>
+                <Insets left="20.0" right="80.0"/>
+            </HBox.margin>
+        </MFXButton>
+        <MFXButton fx:id="syllabusButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER"
+                   depthLevel="LEVEL5" prefHeight="24.0" prefWidth="78.0" style="-fx-background-color: #FFA500;"
+                   text="Syllabus">
+            <HBox.margin>
+                <Insets left="20.0" right="85.0"/>
+            </HBox.margin>
+            <font>
+                <Font name="Nunito Bold" size="14.0"/>
+            </font>
+        </MFXButton>
+        <MFXButton fx:id="cancelClassButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER"
+                   depthLevel="LEVEL5" layoutX="524.0" layoutY="22.0" prefHeight="28.0" prefWidth="96.0"
+                   rippleRadius="50.0" style="-fx-background-color: #FF0000;" text="Cancel Class" wrapText="true">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+            <font>
+                <Font name="Nunito Bold" size="14.0"/>
+            </font>
+        </MFXButton>
+    </children>
+</HBox>

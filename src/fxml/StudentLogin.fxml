@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="1024.0"
+            styleClass="anchor-pane" stylesheets="@../css/CSS-loginPage.css"
+            xmlns="http://javafx.com/javafx/21" fx:controller="controllers.ControllerStudent">
+    <children>
+        <Pane layoutX="545.0" layoutY="16.0" prefHeight="481.0" prefWidth="458.0"
+              style="-fx-background-radius: 50; -fx-background-color: #355062;" stylesheets="@../css/CSS-loginPage.css"
+              AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="16.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="62.0"
+                       maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0"
+                       prefWidth="168.0" text="Student Login" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Hyperlink fx:id="registerLink" alignment="CENTER" layoutX="248.0" layoutY="260.0"
+                           maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                           onAction="#handleRegisterLink" prefHeight="21.0" prefWidth="119.0"
+                           stylesheets="@../css/CSS-loginPage.css" text="Forgot Password?">
+                    <font>
+                        <Font size="1.0"/>
+                    </font>
+                </Hyperlink>
+                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="136.0" layoutY="52.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../icon/students.png"/>
+                    </image>
+                </ImageView>
+                <MFXTextField fx:id="studentIDField" borderGap="7.0" floatMode="BORDER" floatingText="User Name"
+                              floatingTextGap="3.0" layoutX="114.0" layoutY="151.0" maxHeight="1.7976931348623157E308"
+                              maxWidth="1.7976931348623157E308" prefHeight="21.0" prefWidth="253.0"
+                              stylesheets="@../css/CSS-loginPage.css">
+                    <font>
+                        <Font name="Segoe UI" size="11.0"/>
+                    </font>
+                    <textFill>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.8700000047683716"/>
+                    </textFill>
+                    <styleClass>
+                        <String fx:value="mfx-text-field"/>
+                        <String fx:value="mfx-text-field-icon"/>
+                    </styleClass>
+                </MFXTextField>
+                <MFXPasswordField fx:id="studentPasswordField" allowCopy="true" allowPaste="true" floatMode="BORDER"
+                                  floatingText="Password" layoutX="114.0" layoutY="212.0"
+                                  maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="21.0"
+                                  prefWidth="253.0" styleClass="mfx-float-container"
+                                  stylesheets="@../css/CSS-loginPage.css">
+                    <font>
+                        <Font size="11.0"/>
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                    <textFill>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.8700000047683716"/>
+                    </textFill>
+                </MFXPasswordField>
+                <MFXButton fx:id="studentLoginButton" layoutX="114.0" layoutY="296.0"
+                           onAction="#handleLoginButtonAction" prefHeight="37.0" prefWidth="104.0" text="Login"/>
+                <MFXButton fx:id="studentBackButton" layoutX="263.0" layoutY="296.0" onAction="#handleBackButton"
+                           prefHeight="37.0" prefWidth="104.0" text="Back"/>
+            </children>
+        </Pane>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="119.0"
+               maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="229.0"
+               text="Welcome to" textFill="WHITE" AnchorPane.leftAnchor="165.0" AnchorPane.topAnchor="119.0">
+            <font>
+                <Font name="Segoe UI Bold" size="22.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="151.0" fitWidth="313.0" layoutX="143.0" layoutY="169.0" pickOnBounds="true"
+                   preserveRatio="true" styleClass="logo-glowing">
+            <image>
+                <Image url="@../logo/Logo.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="177.0" fitWidth="253.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../logo/people.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

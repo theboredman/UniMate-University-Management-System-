@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #637484;"
+            stylesheets="@../css/AddUserPromp.css" xmlns="http://javafx.com/javafx/21"
+            fx:controller="controllers.UpdateProfile">
+    <top>
+        <HBox prefHeight="104.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="83.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../logo/Logo.png"/>
+                    </image>
+                    <HBox.margin>
+                        <Insets left="227.0" top="12.0"/>
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="594.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="63.0" prefWidth="600.0" styleClass="hbox">
+                    <children>
+                        <Label fx:id="titleLabel" alignment="CENTER" prefHeight="61.0" prefWidth="372.0"
+                               text="Update User Information" textFill="WHITE">
+                            <font>
+                                <Font name="Nunito ExtraBold Italic" size="25.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets left="116.0"/>
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <AnchorPane prefHeight="544.0" prefWidth="600.0">
+                    <children>
+                        <MFXTextField fx:id="genderTextField" floatingText="Gender" layoutX="128.0" layoutY="41.0"
+                                      prefHeight="49.0" prefWidth="160.0">
+                            <font>
+                                <Font name="Nunito Light" size="12.0"/>
+                            </font>
+                        </MFXTextField>
+                        <MFXTextField fx:id="relationField" floatingText="Realtion" layoutX="312.0" layoutY="277.0"
+                                      prefHeight="49.0" prefWidth="160.0">
+                            <font>
+                                <Font name="Nunito Light" size="12.0"/>
+                            </font>
+                        </MFXTextField>
+                        <MFXTextField fx:id="addressField" floatingText="Address" layoutX="128.0" layoutY="120.0"
+                                      prefHeight="49.0" prefWidth="344.0">
+                            <font>
+                                <Font name="Nunito Light" size="12.0"/>
+                            </font>
+                        </MFXTextField>
+                        <MFXTextField fx:id="semesterField" floatingText="Semester" layoutX="128.0" layoutY="348.0"
+                                      prefHeight="49.0" prefWidth="344.0">
+                            <font>
+                                <Font name="Nunito Light" size="12.0"/>
+                            </font>
+                        </MFXTextField>
+                        <MFXTextField fx:id="guardianNameField" floatingText="Guardian Name" layoutX="128.0"
+                                      layoutY="196.0" prefHeight="49.0" prefWidth="160.0">
+                            <font>
+                                <Font name="Nunito Light" size="12.0"/>
+                            </font>
+                        </MFXTextField>
+                        <MFXTextField fx:id="guardianNumberField" floatingText="Guardian Phone Number" layoutX="312.0"
+                                      layoutY="196.0" prefHeight="49.0" prefWidth="160.0">
+                            <font>
+                                <Font name="Nunito Light" size="12.0"/>
+                            </font>
+                        </MFXTextField>
+                        <MFXTextField fx:id="guardianMailField" floatingText="Guardian Mail" layoutX="128.0"
+                                      layoutY="277.0" prefHeight="49.0" prefWidth="160.0">
+                            <font>
+                                <Font name="Nunito Light" size="12.0"/>
+                            </font>
+                        </MFXTextField>
+                        <MFXButton fx:id="addButton" layoutX="120.0" layoutY="445.0" onAction="#handleAddButtonAction"
+                                   prefHeight="40.0" prefWidth="160.0" rippleAnimateShadow="true" text="Update">
+                            <font>
+                                <Font name="Nunito Black" size="12.0"/>
+                            </font>
+                        </MFXButton>
+                        <MFXButton fx:id="cancelButton" layoutX="312.0" layoutY="445.0"
+                                   onAction="#handleCancelButtonAction" prefHeight="40.0" prefWidth="160.0"
+                                   rippleAnimateShadow="true" text="Cancel">
+                            <font>
+                                <Font name="Nunito Black" size="12.0"/>
+                            </font>
+                        </MFXButton>
+                        <MFXDatePicker fx:id="datePicker" layoutX="312.0" layoutY="41.0" prefHeight="49.0"
+                                       prefWidth="160.0" styleClass="mfx-datepicker" text="Date of Birth"/>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
