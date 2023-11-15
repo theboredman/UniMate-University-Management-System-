@@ -5,6 +5,26 @@
 
 UniMate is an innovative University Management System designed to streamline academic processes and enhance collaboration among students, faculty, and administrators.
 
+
+## Screenshots
+
+![Screenshot 1](screenshots/Screenshot%202023-11-15%20122956.png)
+![Screenshot 2](screenshots/Screenshot%202023-11-15%20123011.png)
+![Screenshot 3](screenshots/Screenshot%202023-11-15%20123031.png)
+![Screenshot 4](screenshots/Screenshot%202023-11-15%20123046.png)
+![Screenshot 5](screenshots/Screenshot%202023-11-15%20123210.png)
+![Screenshot 6](screenshots/Screenshot%202023-11-15%20124029.png)
+![Screenshot 7](screenshots/Screenshot%202023-11-15%20124303.png)
+![Screenshot 8](screenshots/Screenshot%202023-11-15%20125140.png)
+![Screenshot 9](screenshots/Screenshot%202023-11-15%20125151.png)
+![Screenshot 10](screenshots/Screenshot%202023-11-15%20125203.png)
+![Screenshot 11](screenshots/Screenshot%202023-11-15%20125230.png)
+![Screenshot 12](screenshots/Screenshot%202023-11-15%20125314.png)
+![Screenshot 13](screenshots/Screenshot%202023-11-15%20125324.png)
+![Screenshot 14](screenshots/Screenshot%202023-11-15%20125330.png)
+
+
+
 ## Key Features (Still Developing)
 
 ### 1. Personalized Dashboards
