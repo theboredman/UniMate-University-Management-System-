@@ -30,7 +30,7 @@ Follow these steps to set up and run UniMate on your local machine.
 
 1. **Install an IDE:**
    - We recommend using IntelliJ IDEA  for the best development experience.
-   - Download and install [IDE Name] from [[official website](https://www.jetbrains.com/idea/)].
+   - Download and install [IntelliJ IDEA] from [[official website](https://www.jetbrains.com/idea/)].
    - Open the IDE and proceed to the next steps.
 
 2. **Import JavaFX and MaterialFX Libraries:**
