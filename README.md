@@ -18,19 +18,39 @@ UniMate is an innovative University Management System designed to streamline aca
 
 - Java Programming Language
 - MaterialFX Library
-- MySQL Database Management System
+- Database: Files
+- CSS (Cascading Style Sheets)
+- FXML (FXML Markup Language)
+  
+
 
 ## Getting Started
 
 Follow these steps to set up and run UniMate on your local machine.
 
-1. [Installation Guide](link-to-installation-guide)
-2. [Configuration Steps](link-to-configuration-steps)
-3. [Contributing Guidelines](link-to-contributing-guidelines)
+1. **Install an IDE:**
+   - We recommend using IntelliJ IDEA  for the best development experience.
+   - Download and install [IDE Name] from [[official website](https://www.jetbrains.com/idea/)].
+   - Open the IDE and proceed to the next steps.
 
-## How to Contribute
+2. **Import JavaFX and MaterialFX Libraries:**
+   - Ensure you have the necessary dependencies installed.
+   - Import the JavaFX and MaterialFX libraries into your project.
+   - For JavaFX, follow the instructions [here](link-to-javafx-guide).
+   - For MaterialFX, follow the instructions [here](link-to-materialfx-guide).
 
-We welcome contributions! Read our [Contribution Guidelines](link-to-contribution-guidelines) to get started.
+3. **Configure the Project:**
+   - Clone the UniMate repository to your local machine.
+   - Open the project in your IDE.
+   - Configure the project settings and ensure that libraries are linked correctly.
+
+4. **Run UniMate:**
+   - Build and run the project in your IDE.
+   - Follow any on-screen instructions for initial setup, if applicable.
+
+Now, UniMate is ready to be used on your local machine. If you encounter any issues during the setup process, refer to our [Contributing Guidelines](link-to-contributing-guidelines) or [create an issue](link-to-issue-page) for assistance.
+
+
 
 ## Roadmap
 
