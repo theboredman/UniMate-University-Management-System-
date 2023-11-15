@@ -1,5 +1,8 @@
 # UniMate
 
+![UniMate Logo](logo.png)
+
+
 UniMate is an innovative University Management System designed to streamline academic processes and enhance collaboration among students, faculty, and administrators.
 
 ## Key Features (Still Developing)
@@ -122,6 +125,73 @@ Here are some exciting features we plan to implement in future releases:
     - *Brief Description:* Explore blockchain technology to secure and authenticate academic credentials, ensuring the integrity of student records.
    
       
+
+## How to Contribute
+
+We welcome contributions to make UniMate even better! Here's how you can get started:
+
+### Reporting Issues
+
+If you encounter a bug, have a feature request, or find something that could be improved, please to let me know. Provide as much detail as possible, including steps to reproduce the issue.
+
+### Making Changes
+
+If you'd like to contribute to the codebase, follow these steps:
+
+1. Fork the repository to your GitHub account.
+2. Create a new branch for your changes: `git checkout -b feature/your-feature-name`.
+3. Make your changes and ensure that the codebase remains clean and functional.
+4. Test your changes thoroughly.
+5. Commit your changes with clear and concise messages.
+6. Push your changes to your forked repository.
+7. Create a pull request to the `main` branch of the main repository.
+
+### Contribution Guidelines
+
+To ensure a smooth contribution process, please adhere to these guidelines:
+
+- Follow the coding style and conventions used in the project.
+- Write clear and concise commit messages.
+- Test your changes thoroughly before submitting a pull request.
+- Keep discussions focused on the topic at hand.
+
+# Code of Conduct
+
+## Introduction
+
+UniMate is an open and collaborative project, and we want to ensure a welcoming and inclusive environment for all contributors and users. This Code of Conduct outlines our expectations for behavior within the project community.
+
+## Our Pledge
+
+In the interest of fostering an open and welcoming environment, we, as contributors and maintainers, pledge to make participation in our project a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+
+## Expected Behavior
+
+We encourage all contributors and community members to:
+
+- Be respectful and considerate of others.
+- Use welcoming and inclusive language.
+- Be supportive and constructive in discussions.
+- Focus on the project and its goals.
+- Show empathy towards others.
+
+## Unacceptable Behavior
+
+Harassment and any form of discriminatory behavior will not be tolerated. This includes, but is not limited to:
+
+- Offensive comments or language.
+- Discrimination based on personal attributes.
+- Harassment in any form.
+- Intimidation or threats.
+- Any form of unwelcome attention.
+
+## Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.0, available at [https://www.contributor-covenant.org/version/2/0/code_of_conduct.html](https://www.contributor-covenant.org/version/2/0/code_of_conduct.html).
+
+
+We appreciate your contributions, and together, we can make UniMate an exceptional project!
+
 
 We're committed to enhancing UniMate and bringing more valuable features to our users. Stay tuned for updates and feel free to share your suggestions.
 
