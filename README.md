@@ -1,6 +1,6 @@
 # UniMate
 
-![UniMate Logo](logo.png)
+![UniMate Logo](Logo.png)
 
 
 UniMate is an innovative University Management System designed to streamline academic processes and enhance collaboration among students, faculty, and administrators.
